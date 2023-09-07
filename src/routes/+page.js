@@ -1,4 +1,4 @@
-//import { PUBLIC_DOMAIN } from '$env/static/public';
+import { PUBLIC_DOMAIN } from '$env/static/public';
 export const load = ()=>{
     var data
     const authenticate = async () => {

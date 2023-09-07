@@ -1,5 +1,5 @@
 <script>
-    //import { PUBLIC_DOMAIN } from '$env/static/public';
+    import { PUBLIC_DOMAIN } from '$env/static/public';
     import {goto} from "$app/navigation";
     import { onMount } from 'svelte';
     import {user_val} from "./stores/user_val.js";
