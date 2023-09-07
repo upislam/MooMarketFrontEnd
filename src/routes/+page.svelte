@@ -1,8 +1,6 @@
 <script>
     import { PUBLIC_DOMAIN } from '$env/static/public';
-    import {goto} from "$app/navigation";
-    import { onMount } from 'svelte';
-    import {user_val} from "./stores/user_val.js";
+    import { user_val } from "./stores/user_val.js";
   
     export let data
     
@@ -10,7 +8,7 @@
 
     const logout = async () => {
         try {
-            const response = await fetch(`https://moomarket-dlki.onrender.com/api/logout`, {
+            const response = await fetch(`${PUBLIC_DOMAIN}/api/logout`, {
                 method: 'GET',
                 credentials: 'include',
                 headers: {

@@ -8,7 +8,7 @@
     
     const postData = async () => {
         try {
-            const response = await fetch(`https://moomarket-dlki.onrender.com/api/login`, {
+            const response = await fetch(`${PUBLIC_DOMAIN}/api/login`, {
                 method: 'POST',
                 credentials: 'include',
                 headers: {

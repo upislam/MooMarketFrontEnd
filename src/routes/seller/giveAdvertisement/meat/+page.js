@@ -3,7 +3,7 @@ export const load = ()=>{
     var data
     const authenticate = async () => {
         try {
-            const response = await fetch(`${PUBLIC_DOMAIN}/api/authenticate`, {
+            const response = await fetch(`${PUBLIC_DOMAIN}/api/seller/giveAdvertisement`, {
                 method: 'GET',
                 credentials: 'include',
                 headers: {
@@ -13,23 +13,20 @@ export const load = ()=>{
             });
             
             if(response.status===204){
-                console.log('bolod');
+                console.log('mara');
             }
             else{
                 data = await response.json();
                 
                 if (data.success) {
-                    data = data.data
-                    console.log(data);
                     return data;
                 } else {
-                    data = data.data
                     return data;
                 }
             }
         } catch (error) {
             console.error('Error:', error);
-            return null;
+            return data;
         }
     };
     return {auth:authenticate()};

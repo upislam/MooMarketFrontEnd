@@ -1,4 +1,5 @@
 <script>
+    import { PUBLIC_DOMAIN } from '$env/static/public';
     import { onMount } from 'svelte';
 
     onMount(() => {
@@ -20,7 +21,7 @@
     });
 
     var districts=[]
-    fetch(`https://moomarket-dlki.onrender.com/api/register/districts`, {
+    fetch(`${PUBLIC_DOMAIN}/api/register/districts`, {
         method: 'GET'
     })
     .then(res => {
@@ -52,7 +53,7 @@
         const value = parent.value;
         console.log(value);
         let thanas
-        fetch(`https://moomarket-dlki.onrender.com/api/register/thanas`, {
+        fetch(`${PUBLIC_DOMAIN}/api/register/thanas`, {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json'
@@ -90,7 +91,7 @@
         const value = parent.value;
         console.log(value);
         let thanas
-        fetch(`https://moomarket-dlki.onrender.com/api/coordinates`, {
+        fetch(`${PUBLIC_DOMAIN}/api/coordinates`, {
             method: 'POST',
             headers: {
             'Content-Type': 'application/json'

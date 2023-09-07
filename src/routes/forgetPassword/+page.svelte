@@ -3,7 +3,7 @@
     var msg=""
     const formHandler = async () => {
         try {
-            const response = await fetch(`https://moomarket-dlki.onrender.com/api/login/forgetPassword`, {
+            const response = await fetch(`${PUBLIC_DOMAIN}/api/login/forgetPassword`, {
                 method: 'POST',
                 credentials: 'include',
                 headers: {

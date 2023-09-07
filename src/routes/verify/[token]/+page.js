@@ -2,7 +2,7 @@ import { PUBLIC_DOMAIN } from '$env/static/public';
 export const load = ({fetch,params})=>{
     const verify = async () => {
         try {
-            const response = await fetch(`${PUBLIC_DOMAIN}/api/login/forgetPassword/verify/${params.token}`, {
+            const response = await fetch(`${PUBLIC_DOMAIN}/api/register/verify/${params.token}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
