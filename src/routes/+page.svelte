@@ -1,7 +1,8 @@
 <script>
     import { PUBLIC_DOMAIN } from '$env/static/public';
     import { user_val } from "./stores/user_val.js";
-  
+    import {goto} from "$app/navigation"
+    
     export let data
     
     $: isLoggedIn = data.auth? true: false;

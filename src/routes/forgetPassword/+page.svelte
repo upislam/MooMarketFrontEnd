@@ -1,5 +1,6 @@
 <script>
     import { PUBLIC_DOMAIN } from '$env/static/public';
+    import {goto} from "$app/navigation"
     var msg=""
     const formHandler = async () => {
         try {

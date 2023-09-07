@@ -1,5 +1,6 @@
 <script>
     import { PUBLIC_DOMAIN } from '$env/static/public';
+    import {goto} from "$app/navigation"
     export let data
     var quantity=1;
     var numbers = Array.from({ length: quantity }, (_, i) => i + 1);

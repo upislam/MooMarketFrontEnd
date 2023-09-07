@@ -1,7 +1,8 @@
 <script>
     import { PUBLIC_DOMAIN } from '$env/static/public';
     import { onMount } from 'svelte';
-
+    import {goto} from "$app/navigation"
+    
     onMount(() => {
         const script = document.createElement('script');
         script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDRz-rQM7ME6UWuWjEYiPcCZI3ccMUdJHg';
